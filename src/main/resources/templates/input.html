@@ -5,7 +5,7 @@
 	<title>KadaiThymeleaf</title>
 </head>
 <body>
-	<h1>Thymeleaf Page</h1>
+	<h1 th:text="#{content.title}">Thymeleaf Page</h1>
 	<p th:text ="${msg}"></p>
 	<form method="post" action = "/output">
 		<input type ="text" name ="val" th:value="${val}">
